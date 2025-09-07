@@ -1,0 +1,29 @@
+{
+  "controller_type": "vive_controller",
+  "bindings": {
+    "/actions/s": {
+      "skeleton": [
+        {
+          "path": "/user/hand/left/input/skeleton/left",
+          "output": "/actions/s/in/l"
+        },
+        {
+          "path": "/user/hand/right/input/skeleton/right",
+          "output": "/actions/s/in/r"
+        }
+      ]
+    },
+    "/actions/p": {
+      "poses": [
+        {
+          "path": "/user/hand/left/pose/raw",
+          "output": "/actions/p/in/l"
+        },
+        {
+          "path": "/user/hand/right/pose/raw",
+          "output": "/actions/p/in/r"
+        }
+      ]
+    }
+  }
+}

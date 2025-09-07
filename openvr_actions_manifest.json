@@ -1,0 +1,46 @@
+{
+  "actions": [
+    {
+      "name": "/actions/s/in/l",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/s/in/r",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/p/in/l",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/p/in/r",
+      "type": "pose"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/s",
+      "usage": "leftright"
+    },
+    {
+      "name": "/actions/p",
+      "usage": "leftright"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "knuckles",
+      "binding_url": "openvr_bindings_knuckles.json"
+    },
+    {
+      "controller_type": "oculus_touch",
+      "binding_url": "openvr_bindings_oculus_touch.json"
+    },
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "openvr_bindings_vive_controller.json"
+    }
+  ]
+}
