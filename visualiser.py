@@ -200,7 +200,7 @@ def gl_buffer_indices(indices, buffer=None):
     gl.glBindBuffer(gl.GL_ELEMENT_ARRAY_BUFFER, buffer)
     a = (gl.ctypes.c_uint16 * len(indices))(*indices)
     gl.glBufferData(gl.GL_ELEMENT_ARRAY_BUFFER, gl.ctypes.sizeof(a), a, gl.GL_STATIC_DRAW)
-    gl.glBindBuffer(gl.GL_ARRAY_BUFFER, 0)
+    gl.glBindBuffer(gl.GL_ELEMENT_ARRAY_BUFFER, 0)
     return buffer
 
 def gl_bind_buffer(program, name, buffer):
